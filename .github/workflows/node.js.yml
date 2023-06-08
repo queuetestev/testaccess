@@ -18,3 +18,5 @@ jobs:
       with:
         registry-url: https://npm.pkg.github.com
     - run: npm install
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
